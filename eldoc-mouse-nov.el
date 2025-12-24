@@ -99,11 +99,11 @@
                   (let ((data (buffer-substring-no-properties (point) (point-max))))
                     (eldoc-mouse-nov--html-to-shr-text data)))
               (kill-buffer)))
-        (apply 'eldoc-mouse-nov--get-link-content (nov-url-filename-and-target url))))
+        (eldoc-mouse-nov--get-link-content (car (nov-url-filename-and-target url)))))
     ))
 
-(defun eldoc-mouse-nov--get-link-content (filename _target)
-  "Retrieve text content from FILENAME at anchor TARGET."
+(defun eldoc-mouse-nov--get-link-content (filename)
+  "Retrieve text content from FILENAME."
   (let (index)
     (when (not (zerop (length filename)))
       (let* ((current-path (cdr (aref nov-documents nov-documents-index)))
