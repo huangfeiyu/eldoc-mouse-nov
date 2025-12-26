@@ -4,7 +4,7 @@
 
 ;; Author: Huang Feiyu <sibadake1@163.com>
 ;; Version: 0.1
-;; Package-Requires: ((emacs "27.1") (eldoc-mouse "3.0"))
+;; Package-Requires: ((emacs "27.1") (eldoc-mouse "3.0.1"))
 ;; Keywords: tools, epub, convenience, mouse, hover
 ;; URL: https://github.com/huangfeiyu/eldoc-mouse-nov
 ;; SPDX-License-Identifier: GPL-3.0-or-later
